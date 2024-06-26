@@ -25,7 +25,7 @@
 		"lit": "^3.1.2"
 	},
 	"devDependencies": {
-		"@custom-elements-manifest/analyzer": "^0.9.2",
+		"@custom-elements-manifest/analyzer": "^0.10.2",
 		"@testing-library/user-event": "^14.5.2",
 		"@origo-ui/base-configs": "*",
 		"jsdom": "^24.0.0",
