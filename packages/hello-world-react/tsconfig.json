@@ -1,0 +1,7 @@
+{
+	"extends": "@origo-ui/base-configs/tsconfig.react.json",
+	"compilerOptions": {
+		"outDir": "dist"
+	},
+	"include": ["src"]
+}
