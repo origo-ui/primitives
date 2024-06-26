@@ -1,5 +1,5 @@
 {
-	"name": "@origo-ui/hello-world-react",
+	"name": "@origo-ui/react-hello-world",
 	"version": "0.0.0",
 	"private": true,
 	"description": "A React component with TypeScript and Lit",
