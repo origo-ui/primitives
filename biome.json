@@ -13,16 +13,6 @@
 					}
 				}
 			}
-		},
-		{
-			"include": ["*/.storybook/main.ts"],
-			"linter": {
-				"rules": {
-					"suspicious": {
-						"noExplicitAny": "off"
-					}
-				}
-			}
 		}
 	]
 }

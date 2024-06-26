@@ -1,6 +1,5 @@
-import type { Preview } from "@storybook/react";
-
-const preview: Preview = {
+/** @type { import('@storybook/web-components').Preview } */
+const preview = {
 	parameters: {
 		controls: {
 			matchers: {
