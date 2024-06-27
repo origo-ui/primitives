@@ -9,7 +9,7 @@ describe("hello-world", () => {
 		document.body.innerHTML = "<hello-world></hello-world>";
 		await customElements.whenDefined("hello-world");
 
-		const el = document.querySelector("hello-world") as HelloWorld;
+		const el = document.querySelector("hello-world") as unknown as HelloWorld;
 		const h1 = el.shadowRoot!.querySelector("h1")!;
 		const button = el.shadowRoot!.querySelector("button")!;
 
@@ -21,7 +21,7 @@ describe("hello-world", () => {
 		document.body.innerHTML = '<hello-world name="Test"></hello-world>';
 		await customElements.whenDefined("hello-world");
 
-		const el = document.querySelector("hello-world") as HelloWorld;
+		const el = document.querySelector("hello-world") as unknown as HelloWorld;
 		const h1 = el.shadowRoot!.querySelector("h1")!;
 		const button = el.shadowRoot!.querySelector("button")!;
 
@@ -35,7 +35,7 @@ describe("hello-world", () => {
 		document.body.innerHTML = "<hello-world></hello-world>";
 		await customElements.whenDefined("hello-world");
 
-		const el = document.querySelector("hello-world") as HelloWorld;
+		const el = document.querySelector("hello-world") as unknown as HelloWorld;
 		const button = el.shadowRoot!.querySelector("button")!;
 		await user.click(button);
 
