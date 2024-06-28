@@ -4,25 +4,25 @@
 	"private": true,
 	"description": "A React component with TypeScript and Lit",
 	"keywords": ["react", "web-components", "typescript", "lit"],
+	"license": "MIT",
 	"type": "module",
 	"main": "dist/hello-world.js",
 	"module": "dist/hello-world.js",
 	"types": "dist/hello-world.d.ts",
 	"files": ["dist"],
 	"scripts": {
-		"build": "npm run compile",
+		"build": "tsc --project tsconfig.build.json",
 		"clean": "rimraf dist",
-		"compile": "tsc",
-		"compile:watch": "tsc --watch"
+		"type-check": "tsc"
 	},
 	"dependencies": {
-		"@lit/react": "^1.0.3",
+		"@lit/react": "^1.0.5",
 		"@origo-ui/hello-world": "*"
 	},
 	"devDependencies": {
-		"@origo-ui/base-configs": "*",
-		"rimraf": "^5.0.5",
-		"typescript": "^5.3.3"
+		"@origo-ui/typescript-config": "*",
+		"rimraf": "^5.0.7",
+		"typescript": "^5.5.2"
 	},
 	"peerDependencies": {
 		"react": "^18.0.0"

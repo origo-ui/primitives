@@ -3,9 +3,5 @@
 		"biomejs.biome",
 		"editorconfig.editorconfig",
 		"runem.lit-plugin"
-	],
-	"unwantedRecommendations": [
-		"dbaeumer.vscode-eslint",
-		"esbenp.prettier-vscode"
 	]
 }

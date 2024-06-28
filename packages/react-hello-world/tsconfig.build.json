@@ -1,5 +1,5 @@
 {
-	"extends": "@origo-ui/base-configs/tsconfig.base.json",
+	"extends": "@origo-ui/typescript-config/react-library.json",
 	"compilerOptions": {
 		"outDir": "dist"
 	},

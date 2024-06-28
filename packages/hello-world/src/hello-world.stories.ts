@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/web-components";
 import { html } from "lit";
 
-import "@origo-ui/hello-world";
+import "./hello-world";
 
 interface HelloWorldProps {
 	name: string;

@@ -1,7 +1,7 @@
 {
 	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
 	"files": {
-		"ignore": [".turbo"]
+		"ignore": ["dist", ".turbo"]
 	},
 	"overrides": [
 		{
@@ -10,6 +10,16 @@
 				"rules": {
 					"style": {
 						"noNonNullAssertion": "off"
+					}
+				}
+			}
+		},
+		{
+			"include": [".storybook/main.ts"],
+			"linter": {
+				"rules": {
+					"suspicious": {
+						"noExplicitAny": "off"
 					}
 				}
 			}
