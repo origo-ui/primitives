@@ -1,0 +1,36 @@
+{
+	"name": "@origo-ui/separator",
+	"version": "0.0.0",
+	"private": true,
+	"description": "A web component with TypeScript and Lit",
+	"keywords": ["web-components", "lit-element", "typescript", "lit"],
+	"license": "MIT",
+	"type": "module",
+	"main": "dist/separator.js",
+	"module": "dist/separator.js",
+	"types": "dist/separator.d.ts",
+	"files": ["dist"],
+	"scripts": {
+		"analyze": "custom-elements-manifest analyze --litelement --globs \"src/**/*.ts\" --outdir dist",
+		"build": "tsc --project tsconfig.build.json && npm run analyze",
+		"clean": "rimraf dist",
+		"lint:lit-analyzer": "lit-analyzer",
+		"test": "vitest --run",
+		"type-check": "tsc"
+	},
+	"dependencies": {
+		"lit": "^3.1.4"
+	},
+	"devDependencies": {
+		"@custom-elements-manifest/analyzer": "^0.10.2",
+		"@origo-ui/typescript-config": "*",
+		"@origo-ui/vitest-config": "*",
+		"@storybook/web-components": "^8.1.11",
+		"@testing-library/dom": "^10.2.0",
+		"lit-analyzer": "^2.0.3",
+		"rimraf": "^5.0.7",
+		"typescript": "^5.5.2",
+		"vitest": "^1.6.0"
+	},
+	"customElements": "dist/custom-elements.json"
+}
