@@ -1,8 +1,0 @@
-{
-	"extends": "@origo-ui/typescript-config/base.json",
-	"compilerOptions": {
-		"outDir": "dist"
-	},
-	"include": ["src"],
-	"exclude": ["node_modules", "dist", "src/**/*.test.ts", "src/**/*.stories.ts"]
-}
