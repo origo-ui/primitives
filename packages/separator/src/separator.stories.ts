@@ -20,18 +20,18 @@ export const Styled: Story = {
 	args: {},
 	render: () => html`
 		<style>
-			.origo-separator__root {
+			origo-separator::part(root) {
 				border: none;
 				background-color: red;
 			}
 
-			.origo-separator__root[data-orientation="horizontal"] {
+			origo-separator[orientation="horizontal"]::part(root) {
 				height: 1px;
 				width: 100%;
 				margin: 20px 0;
 			}
 
-			.origo-separator__root[data-orientation="vertical"] {
+			origo-separator[orientation="vertical"]::part(root) {
 				height: 100px;
 				width: 1px;
 				margin: 0 20px;

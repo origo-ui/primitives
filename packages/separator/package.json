@@ -15,7 +15,6 @@
 		"build": "tsc --project tsconfig.build.json && npm run analyze",
 		"clean": "rimraf dist",
 		"lint:lit-analyzer": "lit-analyzer",
-		"test": "vitest --run",
 		"type-check": "tsc"
 	},
 	"dependencies": {
