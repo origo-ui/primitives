@@ -26,17 +26,12 @@ export class Separator extends LitElement {
 	override render() {
 		return html`
 			<div
-				class="origo-separator__root"
-				data-orientation=${this.orientation}
+				part="root"
 				aria-orientation=${this.orientation}
 				role='separator'
 			>
 			</div>
     `;
-	}
-
-	override createRenderRoot() {
-		return this;
 	}
 }
 
